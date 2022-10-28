@@ -29,7 +29,7 @@ try:
     browser.get(link)
 
     # Дождаться, когда цена дома уменьшится до $100 (ожидание нужно установить не меньше 12 секунд)
-    button = WebDriverWait(browser, 10).until(
+    button = WebDriverWait(browser, 20).until(
         es.text_to_be_present_in_element((By.CSS_SELECTOR, ".card>.card-body #price"), "$100")
     )
 
