@@ -21,7 +21,7 @@ try:
 
     # Загрузить файл. Файл должен иметь расширение .txt и может быть пустым
     current_dir = os.path.abspath(os.path.dirname(__file__))
-    file_path = os.path.join(current_dir, "file.txt")
+    file_path = os.path.join(current_dir, "../file.txt")
     browser.find_element(By.ID, 'file').send_keys(file_path)
 
     # Нажать кнопку "Submit"
