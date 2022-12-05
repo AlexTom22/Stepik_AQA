@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "stepik-aqa"
+version = "0.1.0"
+description = ""
+authors = ["Alexander Tomelo <qa.tomelo.an@gmail.com>"]
+readme = "README.md"
+packages = [{include = "stepik_aqa"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = "^7.2.0"
+selenium = "^4.7.2"
+black = "^22.10.0"
+webdriver-manager = "^3.8.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
