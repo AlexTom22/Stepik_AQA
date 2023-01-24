@@ -1,0 +1,9 @@
+test_name: Get some fake data from the JSON placeholder API
+
+stages:
+  - name: Make sure we have the right ID
+    request:
+      url: https://api.openweathermap.org/data/2.5/weather?q=Minsk&appid=d87819d6535e372021cb731329f70bd5
+      method: GET
+    response:
+      status_code: 200

@@ -8,11 +8,9 @@ try:
     browser = webdriver.Chrome()
     browser.get(link)
 
-    browser.find_element(By.CSS_SELECTOR, value = "div.first_block > div.form-group.first_class > input").send_keys("ASD")
-    browser.find_element(By.CSS_SELECTOR, value = ".first_block > div.form-group.second_class > input").send_keys("ASD")
-    browser.find_element(By.CSS_SELECTOR, value = ".first_block > div.form-group.third_class > input").send_keys("ASD")
-
-
+    browser.find_element(By.CSS_SELECTOR, value="div.first_block > div.form-group.first_class > input").send_keys("ASD")
+    browser.find_element(By.CSS_SELECTOR, value=".first_block > div.form-group.second_class > input").send_keys("ASD")
+    browser.find_element(By.CSS_SELECTOR, value=".first_block > div.form-group.third_class > input").send_keys("ASD")
     # Отправляем заполненную форму
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
     button.click()

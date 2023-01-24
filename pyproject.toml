@@ -4,14 +4,16 @@ version = "0.1.0"
 description = ""
 authors = ["Alexander Tomelo <qa.tomelo.an@gmail.com>"]
 readme = "README.md"
-packages = [{include = "stepik_aqa"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
-pytest = "^7.2.0"
-selenium = "^4.7.2"
+python = "3.10.8"
+selenium = "4.7.2"
 black = "^22.10.0"
-webdriver-manager = "^3.8.5"
+webdriver-manager = "3.8.5"
+
+[tool.poetry.dev-dependencies]
+pytest = "7.2.0"
+tavern = "1.24.1"
 
 
 [build-system]
