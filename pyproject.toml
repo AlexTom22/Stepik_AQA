@@ -6,16 +6,19 @@ authors = ["Alexander Tomelo <qa.tomelo.an@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "3.10.8"
-selenium = "4.7.2"
-black = "^22.10.0"
-webdriver-manager = "3.8.5"
+python = "3.11.4"
+selenium = "4.10.0"
+black = "23.7.0"
+webdriver-manager = "3.8.6"
+setuptools = "68.0.0"
+flake8 = "6.0.0"
+selenium-page-factory = "^2.6"
 
 [tool.poetry.dev-dependencies]
-pytest = "7.2.0"
-tavern = "1.24.1"
+pytest = "7.4.0"
+#tavern = "^1.24.1"
 
 
 [build-system]
 requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+#build-backend = "poetry.core.masonry.api"
